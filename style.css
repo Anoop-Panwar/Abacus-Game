@@ -14,7 +14,7 @@ body{
 }
 
 main{
-    width: 1300px;
+    max-width: 85%;
     margin: auto;
     padding: 35px;
     margin-top: 30px;
