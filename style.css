@@ -1,0 +1,210 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.flex{
+    display: flex;
+}
+
+body{
+    background-color: #EDF1F7;
+}
+
+main{
+    width: 1300px;
+    margin: auto;
+    padding: 35px;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+h1{
+    text-align: center;
+    color: #2A74C5;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#target-number{
+    text-align: center;
+    color: #2A74C5;
+    margin-top: 30px;
+    font-size: 3rem;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.board{
+    background-color: #EBEFF5;
+    border-radius: 20px;
+    height: 270px;
+    width: 600px;
+    margin: auto;
+    margin-top: 60px;
+    align-items: end;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+    position: relative;
+    
+
+}
+
+/* abacus base and rods */
+
+.base{
+    position: absolute;
+    background-color: #944727;
+    border-radius: 5px;
+    width: 480px;
+    top: 195px;
+    height: 24px;
+   
+}
+
+.digit-place{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: white;
+    gap: 80px;
+    position: absolute;
+    top: 198px;
+    z-index: 1;
+
+}
+
+.sticks-container{
+    gap: 94px;
+    position: absolute;
+    bottom: 75px;
+
+}
+
+.stick{
+    width: 6px;
+    height: 180px;
+    background-color: #944727;
+    position: relative;
+    top: 2px;
+    border-radius: 10px;
+
+}
+
+.rod{
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+
+}
+
+.decreaseBtn,.increaseBtn{
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: #398CDC;
+    border: none;
+    font-weight: 700;
+    font-size: medium;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.increaseBtn:active{
+    background-color: #A1C7EA;
+}
+
+.decreaseBtn:active{
+    background-color: #A1C7EA;
+}
+
+.btn-container{
+    display: flex;
+    gap: 10px;
+}
+
+.beads-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.bead{
+    height: 18px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50px;
+    z-index: 1;
+
+}
+
+#user-number{
+    text-align: center;
+    margin-top: 10px;
+    color: #3F4859;
+    font-family:Arial, Helvetica, sans-serif
+    
+}
+
+.message{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px 0px 20px 0px;
+    color: #262F3B;
+    font-weight: 600;
+}
+
+.win-text{
+    color: #4DA500;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.hidden{
+    display: none;
+
+}
+
+
+.next-question{
+    display: block;
+    margin: auto;
+    height: 50px;
+    width: 170px;
+    font-weight: 800;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #4DA500;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+.rod:nth-child(1) .bead{
+    background: #9ACB45;
+}
+
+
+.rod:nth-child(2) .bead{
+    background: #D56FD2;
+}
+
+
+.rod:nth-child(3) .bead{
+    background: #4479AD;
+}
+
+
+.rod:nth-child(4) .bead{
+    background: #FECF0E;
+}
+
+
+.rod:nth-child(5) .bead{
+    background: #FE573D;
+}

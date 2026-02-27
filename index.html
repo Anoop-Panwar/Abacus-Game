@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <main>
+        <h1>Match the Numbers of the abacus</h1>
+        <h2 id="target-number">00000</h2>
+    
+        
+        <div class="board flex">
+
+            <div class="rod flex">
+                <div class="beads-container">
+                
+                </div>
+                 <p class="digit-place">T-Th</p>
+                <div class="btn-container">
+                    <button class="decreaseBtn">-</button>
+                    <button class="increaseBtn">+</button>
+                </div>
+            </div>
+            <div class="rod flex">
+                <div class="beads-container">
+                
+                </div>
+                <p class="digit-place">Th</p>
+                <div class="btn-container">
+                    <button class="decreaseBtn">-</button>
+                    <button class="increaseBtn">+</button>
+                </div>
+            </div>
+            <div class="rod flex">
+                <div class="beads-container">
+
+                </div>
+                <p class="digit-place">H</p>
+                <div class="btn-container">
+                    <button class="decreaseBtn">-</button>
+                    <button class="increaseBtn">+</button>
+                </div>
+            </div>
+            <div class="rod flex">
+                <div class="beads-container">
+
+                </div>
+                <p class="digit-place">T</p>
+                <div class="btn-container">
+                    <button class="decreaseBtn">-</button>
+                    <button class="increaseBtn">+</button>
+                </div>
+            </div>
+            <div class="rod flex">
+                <div class="beads-container">
+
+                </div>
+                <p class="digit-place">O</p>
+                <div class="btn-container">
+                    <button class="decreaseBtn">-</button>
+                    <button class="increaseBtn">+</button>
+                </div>
+            </div>
+
+            <!-- board diagram -->
+            <div class="base"> </div>
+            <div class="sticks-container flex">
+                <div class="stick"></div>
+                <div class="stick"></div>
+                <div class="stick"></div>
+                <div class="stick"></div>
+                <div class="stick"></div>
+            </div>
+        </div>
+
+        <!-- user numer -->
+        <h2 id="user-number">0</h2>
+
+        <!-- display text -->
+        <div class="message">
+            <p class="intial-text">Adjust the beads to match the target number</p>
+            <p class="started-text hidden">Keep adjusting the beads.</p>
+            <p class="win-text hidden">You match the number!</p>
+        </div>
+
+        <button class="next-question">New Question</button>
+
+    </main>    
+    
+    <script src="script.js"></script>
+</body>
+</html>
